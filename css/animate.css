@@ -1,0 +1,30 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-120deg);
+    }
+  }
+
+  /* CSS untuk menghubungkan scroll dengan animasi */
+  .scroll-container {
+    scroll-timeline: --scrollTimeline vertical;
+  }
+
+  /* Menerapkan animasi pada elemen foto yang berputar */
+  .rotate-element {
+    animation: rotate 1s linear;
+    animation-timeline: view();
+    animation-range: entry exit; /* Sesuai dengan tinggi parent */
+  }
+
+
+  /* Style dasar untuk kata-kata */
+  .text-word {
+    opacity: 0;
+  }
