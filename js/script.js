@@ -1,6 +1,9 @@
 const words = document.querySelectorAll('.text-word');
   const totalWords = words.length;
-  const scrollContainer = document.getElementById('scroll-container');
+  const scrollContainer = document.querySelector('.scroll-container');
+
+  // console.log(scrollContainer);
+  
   
   // Target completion percentage (teks sudah muncul semua pada 60% scroll)
   const completionTarget = 0.55;
